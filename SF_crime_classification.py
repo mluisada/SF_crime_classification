@@ -4,7 +4,6 @@ Created on Sat Nov  7 19:01:24 2015
 
 @author: Laetitia
 """
-#cd '/Users/Laetitia/Documents/Python/SF_crime location/'
 
 import pandas as pd
 import numpy as np

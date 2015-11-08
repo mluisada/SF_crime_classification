@@ -13,7 +13,6 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.ensemble import AdaBoostClassifier
 from sklearn.tree import DecisionTreeClassifier
 
-N=10 #Number of intervals for X and Y coordinates. The number of regions is: N**2
 
 def parse_date(date):
     d=datetime.strptime(date,"%Y-%m-%d %H:%M:%S")
@@ -23,6 +22,12 @@ def parse_date(date):
     hour=d.hour
     return year, month, day, hour
 
+#We are going to divide SF is rectangles. Each axis X and Y is divided in N intervals.
+N=10 #Number of intervals for X and Y coordinates.
+
+# There are several points ((X,Y) coordinates) that are all located far from SF. We find the values min and max of X and Y, but we do not considere those points. 
+# The outliers will be located in the same region, given that all the outliers have exactly the same coordinates.
+
 def get_min_max_wo_outliers(train, test):
     df=pd.concat([train,test],axis=0,ignore_index=True)
     df=df[(df['X']<-122) & (df['Y']<50)]
@@ -30,6 +35,7 @@ def get_min_max_wo_outliers(train, test):
     min_X, max_X, min_Y, max_Y=df['X'][idx_min_X], df['X'][idx_max_X], df['Y'][idx_min_Y], df['Y'][idx_max_Y]
     return min_X, max_X, min_Y, max_Y
 
+# For each coordinates (X,Y), we return the number of the region where the point is located.
 def intervals(X,Y):
     ind_X = np.floor((X - min_X) / len_int_X)
     ind_Y = np.floor((Y - min_Y) / len_int_Y)

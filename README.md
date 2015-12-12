@@ -11,6 +11,8 @@ We plan to work according to the following steps :
 4. Search engine
 
 
+
+Here are the details of each step.
 1. Aggregating the data
 There are 39 different types of crimes. We first decided to aggregate them into 16 categories to simplify the analysis.
 No need to process the data further as they are already clean.

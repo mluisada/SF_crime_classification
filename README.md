@@ -20,9 +20,7 @@ No need to process the data further as they are already clean.
 
 2. Data exploration and visualization
 A descriptive analysis of different types of crimes to answer these questions :
-- How many times do crimes occur? When ?
-- In which neighborhood does a particular crime happen?
-- Create a map.
+How many times do crimes occur? When ? In which neighborhood does a particular crime happen? How to visualize this on a map?
 
 
 3. Classification

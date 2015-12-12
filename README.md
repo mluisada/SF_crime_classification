@@ -6,7 +6,7 @@ The goal is to classify the category of crime given the time and location where 
 
 We plan to work according to the following steps :
 1. Aggregating the data
-2. Data exploration
+2. Data exploration 
 3. Classification
 4. Search engine
 

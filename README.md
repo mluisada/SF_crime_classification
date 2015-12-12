@@ -30,4 +30,6 @@ Use of data mining techniques to predict where and when they could happen.
 We would like to create a search engine where we can type the neighborhood or time to get a statistics summary of crimes
 
 
-This is a group project by two Columbia grad students : Laetitia JUMEL and Marie-Laura LUISADA
+This is an extracurricular group project by : 
+- Laetitia JUMEL
+- Marie-Laura LUISADA

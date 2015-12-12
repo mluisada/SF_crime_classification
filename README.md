@@ -5,10 +5,10 @@ Here is the description of the competition : https://www.kaggle.com/c/sf-crime
 The goal is to classify the category of crime given the time and location where it occured.
 
 We plan to work according to the following steps :
-1. Aggregating the data
-2. Data exploration 
-3. Classification
-4. Search engine
+- Aggregating the data
+- Data exploration 
+- Classification
+- Search engine
 
 
 
